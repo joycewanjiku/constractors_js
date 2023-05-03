@@ -26,6 +26,7 @@ class car{
 let car= new car("Toyota","Camry","2020")
 
 console.log(car);
+
 // 2) Create a Rental class or function constructor that has the following properties:
 // ● car (Car object): The car that has been rented.
 // ● renterName (string): The name of the person who rented the car.
@@ -33,11 +34,34 @@ console.log(car);
 // ● rentalEndDate (Date object): The end date of the rental period.
 // The Rental class or function constructor should also have a method called
 // calculateRentalDuration that returns the rental duration in days.
+function Rental(car,rentalName,rentalStartDate,rentalEndDate){
+    this.car=car
+    this.rentalName=rentalName
+    this.rentalStartDate
+    this.rentalEndDate=rentalEndDate
+
+
+    this.calculateRentalDuration=function(){
+        const oneDay=24*60*60*100;
+        Number of milliseconds in a day,
+        const endDate=new
+        Date(this.rentalStartDate);
+        return Math.round(math)
+    }
+
+}
 // 3) Create an instance of the Car class or function constructor for a car in the
 // inventory. Then, create an instance of the Rental class or function constructor for
 // a rental involving the car you created. Finally, calculate the rental duration using
 // the calculateRentalDuration method.
-
+const car=new car("Toyota","Camry",2012) ;
+const rentalStartDate=new
+Date("2020-05-12");
+const rentalEndDate=new
+Date("2020-05-12")
+const rental=new Rental(car,"joyce",
+rentalStartDate,rentalEndDate)
+console.log(rental.calculateRentalDuration);
 
 
 // 
@@ -52,10 +76,42 @@ console.log(car);
 // The Question class should also have a method called checkAnswer that takes a
 // user's answer as a parameter and returns true if the answer is correct and false
 // otherwise.
+class Question{
+    constructor(text,optios,correctAnswer)
+}
+this.text=text
+this.Option
+this.correctAnswer=correctAnswer
+
+
+
 // 2. Create a Quiz class with the following properties:
 // ● questions(array):An array of Question objects.
 // ● currentQuestionIndex(number): The index of the current question in the
 // questions array.
+class Quiz{
+    constructor(Questions){
+        this.questions=this.questions
+        this.currentQuestion=0
+        this.score=0
+    }
+    getCurrentQuestion(){
+        return
+        this.questions[this.currentQuestion];
+    }
+    getNextQuestion(){
+        this.currentQuestion++;
+        return this.getCurrentQuestion();
+    }
+    answercurrentQuestion(answer){
+        const currentQuestion=
+        this.getCurrentQuestion();
+        if(currentQuestion.currentQuestion===answer){
+            this.score++;
+        }
+        
+    }
+}
 // ● score(number): The user’s current score.
 // The Quiz class should have the following methods:
 // ● addQuestion: Takes a Question object as a parameter and adds it to the
